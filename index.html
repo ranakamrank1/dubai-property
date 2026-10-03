@@ -33,25 +33,57 @@ input{width:100%;box-sizing:border-box;padding:10px 12px;font-size:1rem;border:1
 table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:12px}
 td{padding:6px 0;border-bottom:1px solid var(--line)}
 td:last-child{text-align:right}
+
+.banner{background:var(--accent);color:var(--on);text-align:center;font-size:.85rem;padding:8px 12px}
+.banner a{color:inherit;font-weight:600}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(rgba(11,29,46,.72),rgba(11,29,46,.2)),url(images/hero.jpg) center top/cover,linear-gradient(180deg,#0b1d2e 0%,#1f4e6b 55%,#e8a45c 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:240px}
+.hero .tag{color:#ffd9a0}
+.hero p.lead{font-size:1.15rem;font-weight:600;color:#ffd9a0;margin-bottom:8px}
+.hero .sub{color:#e6edf2}
+.hero .btn{background:#fff;color:#0b1d2e}
+.hero .btn.alt{background:transparent;color:#fff;border:1px solid #fff}
+.sky{position:absolute;left:0;right:0;bottom:0;width:100%;height:170px;display:block}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+.tile{position:relative;height:170px;border-radius:14px;overflow:hidden;background-size:cover;background-position:center;color:#fff;display:flex;align-items:flex-end}
+.tile span{width:100%;padding:28px 12px 10px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.band{height:200px;border-radius:14px;background:linear-gradient(rgba(11,29,46,.5),rgba(11,29,46,.5)),url(images/banner.jpg) center/cover,linear-gradient(135deg,#0b1d2e,#1f4e6b);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:1.25rem;font-weight:600}
 footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted)}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
+<div class="banner">🏙️ Free Dubai rental yield calculator &middot; Honest advice from Rana Kamran, Throne Properties Dubai &middot; <a href="#calculator">Try it now</a></div>
+<div class="hero">
+  <div class="wrap">
     <div class="tag" id="brand">Dubai Property Advisor</div>
     <h1>Know your numbers before you buy in Dubai.</h1>
-    <p style="font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:8px">I run the numbers, you make the decision, and your interests always come first.</p>
-    <p class="muted">Honest, data-driven help for investors and relocating professionals: real yields, real costs, no pressure.</p>
+    <p class="lead">I run the numbers, you make the decision, and your interests always come first.</p>
+    <p class="sub">Honest, data-driven help for investors and relocating professionals: real yields, real costs, no pressure.</p>
     <a class="btn" href="#calculator">Try the free yield calculator</a>
     <a class="btn alt" href="#contact">Talk to me</a>
-  </header>
+  </div>
+  </div>
+<div class="wrap">
 
   <section>
     <div class="three">
       <div class="card"><h2>Clear numbers</h2><p class="muted">Net yield with service charges and buying costs included, not just the headline figure.</p></div>
       <div class="card"><h2>Honest advice</h2><p class="muted">Risks and costs explained up front, so you can decide with confidence.</p></div>
       <div class="card"><h2>Data-driven</h2><p class="muted">Built on official Dubai Land Department data and a software background.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Explore Dubai's top areas</h2>
+    <p class="muted">Tell me which community fits your goal and budget.</p>
+    <div class="gallery">
+      <div class="tile" role="img" aria-label="Downtown Dubai" style="background-image:url(images/downtown.jpg),linear-gradient(135deg,#0b1d2e,#e8a45c)"><span>Downtown Dubai</span></div>
+      <div class="tile" role="img" aria-label="Dubai Marina" style="background-image:url(images/marina.jpg),linear-gradient(135deg,#1f4e6b,#6fb3c8)"><span>Dubai Marina</span></div>
+      <div class="tile" role="img" aria-label="Palm Jumeirah" style="background-image:url(images/palm.jpg),linear-gradient(135deg,#0f6e5a,#7fd1b9)"><span>Palm Jumeirah</span></div>
+      <div class="tile" role="img" aria-label="Business Bay" style="background-image:url(images/business-bay.jpg),linear-gradient(135deg,#2b3a55,#c98b5a)"><span>Business Bay</span></div>
+      <div class="tile" role="img" aria-label="Dubai Hills Estate" style="background-image:url(images/dubai-hills.jpg),linear-gradient(135deg,#3b6b4a,#b9d48a)"><span>Dubai Hills Estate</span></div>
+      <div class="tile" role="img" aria-label="Jumeirah Village Circle" style="background-image:url(images/jvc.jpg),linear-gradient(135deg,#5a3b6b,#e0a3b8)"><span>Jumeirah Village Circle</span></div>
     </div>
   </section>
 
@@ -86,6 +118,8 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:.78rem;col
     </div>
     <p class="muted" style="font-size:.78rem;margin-top:10px">Buying costs are an editable estimate; verify current fees with official sources. For illustration only, not financial advice.</p>
   </section>
+
+  <div class="band">Your Dubai home or investment starts with the right numbers.</div>
 
   <section id="contact">
     <h2>Want help with your numbers?</h2>
